@@ -1,0 +1,62 @@
+<mat-card appearance="outlined">
+  <mat-card-header class="margin-bottom-15 margin-bottom-100"> <!-- al doilea se ia in considerare pt ca e ultimul din linie -->
+    <mat-card-title>Add item</mat-card-title>
+    <mat-card-subtitle>Fill in all the fields below</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="display-grid">
+<!--    <mat-form-field class="input-form-field">-->
+<!--      <mat-label>Clearable input</mat-label>-->
+<!--      <input matInput type="text" [(ngModel)]="value">  &lt;!&ndash; ne ajuta sa facem o legatura intre variabilele din typescript si componentele din html &ndash;&gt;-->
+<!--      @if (value) {-->
+<!--        <button matSuffix mat-icon-button aria-label="Clear" (click)="value=''">-->
+<!--          <mat-icon>close</mat-icon>-->
+<!--        </button>-->
+<!--      }-->
+<!--    </mat-form-field>-->
+
+    <mat-form-field class="input-form-field">
+      <mat-label>Enter the title</mat-label>
+      <input matInput type="text" [(ngModel)]="title">  <!-- ne ajuta sa facem o legatura intre variabilele din typescript si componentele din html -->
+      @if (title) {
+        <button matSuffix mat-icon-button aria-label="Clear" (click)="title=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+
+    <mat-form-field class="input-form-field">
+      <mat-label>Enter the description</mat-label>
+      <input matInput type="text" [(ngModel)]="description">
+      @if (description) {
+        <button matSuffix mat-icon-button aria-label="Clear" (click)="description=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+
+    <mat-form-field class="input-form-field">
+      <mat-label>Enter the price</mat-label>
+      <input matInput type="text" [(ngModel)]="price">
+      @if (price) {
+        <button matSuffix mat-icon-button aria-label="Clear" (click)="price=0">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+
+    <mat-form-field class="input-form-field">
+      <mat-label>Enter the image URL</mat-label>
+      <input matInput type="text" [(ngModel)]="imageUrl">
+      @if (imageUrl) {
+        <button matSuffix mat-icon-button aria-label="Clear" (click)="imageUrl=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button (click)="showValue()">Add item</button> <!-- click este un eveniment - evenimentele sunt scrise intre paranteze rotunde -->
+  </mat-card-actions>
+</mat-card>

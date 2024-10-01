@@ -1,0 +1,22 @@
+.input-form-field {
+  width: 400px;
+}
+
+.display-grid{
+  display: grid;
+}
+
+.margin-bottom-15{
+  margin-bottom: 15px !important;
+}
+
+.margin-bottom-100{
+  margin-bottom: 100px;
+}
+
+
+
+/*prioritate stiluri: id, clasa, tip de element dar inainte de toate e inline-style - cel care se scrie direct in element in fisierul html */
+
+
+/*"!important" : are prioritatea cea mai mare daca e scris pe o proprietate in css*/

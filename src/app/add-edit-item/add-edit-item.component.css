@@ -18,5 +18,6 @@
 
 /*prioritate stiluri: id, clasa, tip de element dar inainte de toate e inline-style - cel care se scrie direct in element in fisierul html */
 
-
+/*"ng generate service <nume fisier>" - comanda pt generare service */
+/*"ng generate component <nume componenta>" - comanda pt generare componenta angular */
 /*"!important" : are prioritatea cea mai mare daca e scris pe o proprietate in css*/

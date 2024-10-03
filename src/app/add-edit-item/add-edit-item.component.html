@@ -57,6 +57,7 @@
   </mat-card-content>
 
   <mat-card-actions>
-    <button mat-button (click)="showValue()">Add item</button> <!-- click este un eveniment - evenimentele sunt scrise intre paranteze rotunde -->
+<!--    <button mat-button (click)="showValue()">Add item</button> &lt;!&ndash; click este un eveniment - evenimentele sunt scrise intre paranteze rotunde &ndash;&gt;-->
+    <button mat-button (click)="submitForm()">{{item==null ? 'Add' : 'Update'}} item</button> <!-- click este un eveniment - evenimentele sunt scrise intre paranteze rotunde -->
   </mat-card-actions>
 </mat-card>

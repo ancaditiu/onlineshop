@@ -1,0 +1,15 @@
+.input-form-field {
+  width: 400px;
+}
+
+.display-grid{
+  display: grid;
+}
+
+.margin-bottom-15{
+  margin-bottom: 15px !important;
+}
+
+.margin-bottom-100{
+  margin-bottom: 100px;
+}

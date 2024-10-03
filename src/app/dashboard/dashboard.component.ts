@@ -14,13 +14,14 @@ import {ListItemsComponent} from "../list-items/list-items.component";
 })
 export class DashboardComponent {
 
-    item : any;
+    itemDashboard : any;
     constructor() {}
 
-    onReceiveItem(item: any){
+    // itemParam este elementul primit cu ajutorul EventEmitter definit in list-items-component.ts
+    onReceiveItem(itemParam: any){
       console.log("DashboardComponent - onReceiveItem()");
-      console.log(item);
-      this.item = item;
+      console.log(itemParam);
+      this.itemDashboard = itemParam;
     }
 
 }

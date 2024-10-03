@@ -54,9 +54,11 @@ export class ListItemsComponent {
     this.itemService.deleteItems(id);
   }
 
+
   onEditItem(item : any){
     console.log("List items - onEditItem()");
     this.onEditEvent.emit(item);
+    // metoda emit() trimite in componenta de dashboard itemul pe care am dat click
   }
 
 }

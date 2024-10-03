@@ -80,8 +80,10 @@ export class AddEditItemComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     // aceasta metoda se apeleaza atunci cand elementele de la @Input() se schimba
     console.log("ngOnChanges()");
+
     console.log(this.item);
     if(this.item != null){
+      console.log("am primit o valoare noua pentru item dupa ce am apasat butonul edit")
       this.title = this.item.title;
       this.description = this.item.description;
       this.price = this.item.price;

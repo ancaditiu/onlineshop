@@ -1,9 +1,10 @@
-<div>
-  <p *ngFor="let item of itemsList"> <!-- asa se parcurge o lista in html -->
-<!--    interpolare de stringuri = modalitate de a afisa textul dintr o variabila si e valabil pt toate tipurile de date cand vrem sa afisam valoarea unei variabile in html -->
-    {{item}}
-  </p>
-</div>
+<!--<div>-->
+<!--  <p *ngFor="let item of itemsList"> &lt;!&ndash; asa se parcurge/afiseaza o lista in html &ndash;&gt;-->
+<!--&lt;!&ndash;    interpolare de stringuri = modalitate de a afisa textul dintr o variabila si e valabil pt toate tipurile de date cand vrem sa afisam valoarea unei variabile in html &ndash;&gt;-->
+<!--    {{item}}-->
+<!--&lt;!&ndash;  let = variabila de scop/local, var = variabila globala &ndash;&gt;-->
+<!--  </p>-->
+<!--</div>-->
 
 <!--mai jos este un template pentru datele pe care le vom primi-->
 <mat-card *ngFor="let item of itemsList">
@@ -13,4 +14,8 @@
     <p>Price: {{item.price}}</p>
     <p>ImageUrl: {{item.imageUrl}}</p>
   </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button (click)="onDeleteItem(item.id)">Delete</button>
+    <button mat-flat-button (click)="onEditItem(item)">Edit</button>
+  </mat-card-actions>
 </mat-card>

@@ -18,7 +18,7 @@ export const routes: Routes = [
   },
   {
     path:"",
-    redirectTo:"dashboard",
+    redirectTo:"auth", // cand pornim pagina prima data
     pathMatch:"full"
   }
 ];
